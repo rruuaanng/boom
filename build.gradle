@@ -1,0 +1,32 @@
+plugins {
+    id 'scala'
+}
+
+group = 'org.ruang'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    maven {
+        url = 'E:\\BuildProject\\Maven\\repository\\mvn-repository'
+    }
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation 'com.typesafe.akka:akka-http-core_2.12:10.2.5'
+    implementation 'com.typesafe.akka:akka-actor_2.12:2.8.0'
+    implementation 'com.typesafe.akka:akka-stream_2.12:2.8.0'
+    implementation 'com.typesafe.akka:akka-http_2.12:10.2.5'
+    implementation 'org.moon:peace-utils_2.12:1.0'
+}
+
+
+test {
+    useJUnitPlatform()
+}
+
+scala {
+    version = '2.12.16'
+}
