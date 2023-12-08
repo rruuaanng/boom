@@ -19,7 +19,6 @@ dependencies {
     implementation 'com.typesafe.akka:akka-actor_2.12:2.8.0'
     implementation 'com.typesafe.akka:akka-stream_2.12:2.8.0'
     implementation 'com.typesafe.akka:akka-http_2.12:10.2.5'
-    implementation 'org.moon:peace-utils_2.12:1.0'
 }
 
 
