@@ -5,6 +5,4 @@ object Mode {
   val REGEX_FIRST = Mode(2)
 }
 
-case class Mode(v: Int) {
-
-}
+case class Mode(v: Int)
